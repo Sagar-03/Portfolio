@@ -5,22 +5,15 @@ import Tilt from "react-parallax-tilt";
 import Avatar from "../images/Avatar.gif";
 import { CgPhone } from "react-icons/cg";
 import { BsPerson } from "react-icons/bs";
+import Skills from "./Skills.jsx";
+
 const Home = () => {
   return (
     <div>
       <div className="HomePage">
         <div className="HomeText">
           <h1>Hello there!</h1>
-          <h1>
-            I'M Sagar Kumar Jha
-          </h1>
-         {/* <h2>
-        ENTERPRENEUR (Founder @LIMEWEAR) 
-        Open Source Contributor (Contibutor in Caffine n Code, Gssoc'24) 
-        FreeLancer
-        Google Development Student Club (ADGIPS)
-          Top 10 in 10+ Hackathon
-          </h2>  */}
+          <h1>I'M Sagar Kumar Jha</h1>
           <Type />
           <Link to="/About">
             <button>
@@ -38,6 +31,25 @@ const Home = () => {
         <Tilt>
           <img className="Avatar" src={Avatar} alt="" />
         </Tilt>
+      </div>
+
+      <h1 className="SkillsHeading"> Skillset</h1>
+      <div className="skills">
+        <Skills skill="HTML" />
+        <Skills skill="CSS" />
+        <Skills skill="Figma" />
+        <Skills skill="Bootstrap" />
+        <Skills skill="Tailwind" />
+        <Skills skill="Javascript" />
+        <Skills skill="React" />
+        <Skills skill="Git" />
+        <Skills skill="Github" />
+        <Skills skill="C++" />
+        <Skills skill="Npm" />
+        <Skills skill="MongoDB" />
+        <Skills skill="NodeJs" />
+        <Skills skill="MySQL" />
+        <Skills skill="Python" />
       </div>
     </div>
   );

@@ -12,11 +12,12 @@
 }
 body {
   font-family: "Raleway", sans-serif;
-  background: radial-gradient(
+  /* background: radial-gradient(
     1700px circle at 4.48% 0%,
     #000 0%,
     #000 100%
-  );
+  ); */
+  background-image: url("./images/bg.png");
   color: #e7e7e7;
   min-height: 100vh;
 }
@@ -339,13 +340,16 @@ button:hover {
   margin: 0px 25px 25px 0px;
   border: 3px solid var(--color);
   font-size: 64px;
-  border-radius: 5px;
+  border-radius: 7px;
   transition: 0.5s;
 }
 .SkillBox:hover {
   transform: scale(1.2);
   background-color: var(--color);
   border: none;
+  color: var(--color);
+  background-color: #e7e7e7;
+  transition: all ease-in-out 0.3s;
 }
 
 .SkillsHeading {
