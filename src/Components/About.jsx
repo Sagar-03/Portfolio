@@ -1,5 +1,6 @@
 import React from "react";
 import { FaFileDownload } from "react-icons/fa";
+import MyPhoto from "../images/Photo.jpg";
 
 const About = () => {
   return (
@@ -30,6 +31,9 @@ const About = () => {
             View Resume <FaFileDownload></FaFileDownload>
           </button>
         </a>
+      </div>
+      <div className="PhotoContainer">
+        <img src={MyPhoto} alt="Sagar Kumar jha" className="CircularPhoto" />
       </div>
     </div>
   );

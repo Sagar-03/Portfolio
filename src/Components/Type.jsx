@@ -1,5 +1,6 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
+// import Font from "FontAwesomeIcon icon={faCode}";
 
 const Type = () => {
   return (

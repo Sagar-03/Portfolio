@@ -1,38 +1,29 @@
 import React, { useState } from "react";
 import { FaCheck } from "react-icons/fa";
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [submitted, setSubmitted] = useState(false);
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form submitted!");
-    setSubmitted(true);
+
+    emailjs.send('service_fm08r8b', 'template_ky4l2go', formData, '26egzYN-x9R9wO7IX')
+      .then((response) => {
+         console.log('SUCCESS!', response.status, response.text);
+         setSubmitted(true);
+      }, (err) => {
+         console.log('FAILED...', err);
+      });
   };
 
   return (
-    <div className="contact-container">
-      {/* Contact Info Section */}
-      <div className="contact">
-        <h2>Contact Information</h2>
-        <span className="Email">Email: sagarjha2004@gmail.com</span>
-        <span className="Phone">Phone: 9625382247</span>
-      </div>
-
-      {/* Contact Form Section */}
+    <div>
       <h2>Send Message Directly</h2>
       {submitted ? (
         <p className="submitted-message">Form has been submitted!</p>

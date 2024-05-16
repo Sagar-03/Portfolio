@@ -8,15 +8,16 @@ import BackpackImage from "../images/backpack.png";
 const Projects = () => {
   return (
     <div>
-      <h1 className="projectHeading">
+      {/* <h1 className="projectHeading">
         My <b>Projects</b>
       </h1>
-      <div className="project">
+      <div 
+      className="project">
         <ProjectBox projectPhoto={GymImage} projectName="Levels" />
         <ProjectBox projectPhoto={FilmImage} projectName="Movie" />
         <ProjectBox projectPhoto={ColourImage} projectName="ColourPalette" />
         <ProjectBox projectPhoto={BackpackImage} projectName="Backpack" />
-      </div>
+      </div> */}
     </div>
   );
 };
