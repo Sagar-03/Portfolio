@@ -6,7 +6,7 @@ Sure! Here’s the updated README with an additional section that directly links
 
 Welcome to my developer portfolio! This project showcases my skills and projects, created using **ReactJS** and **Vite** for a fast and modern web experience. Check it out live [here](https://sagarportfolio-five.vercel.app/)!
 
-![Portfolio Preview](https://via.placeholder.com/800x400.png?text=Portfolio+Screenshot)
+![Portfolio Preview]![Sagar Kumar jha - Google Chrome 5_17_2024 11_29_25 AM](https://github.com/Sagar-03/Portfolio/assets/146898741/4e67626b-100a-4f69-aaad-5198209f2b5f)
 
 ## 📚 Table of Contents
 
@@ -66,8 +66,8 @@ You can view the live version of my portfolio here: [Sagar's Portfolio](https://
 I'm always excited to connect with other professionals and explore new opportunities. Feel free to reach out to me through:
 
 - The contact form on my [portfolio website](https://sagarportfolio-five.vercel.app/).
-- [LinkedIn](https://www.linkedin.com/in/your-linkedin-profile).
-- [Email](mailto:your-email@example.com).
+- [LinkedIn]([https://www.linkedin.com/in/your-linkedin-profile](https://www.linkedin.com/in/sagar-kumar-jha-237405240/)).
+- [Email](mailto:sagarjha2004@gmail.com).
 
 ---
 
