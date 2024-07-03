@@ -7,6 +7,7 @@ import Home from "./Components/Home";
 import About from "./Components/About";
 import Project from "./Components/Projects";
 import Contact from "./Components/Contact";
+import SkillSet from "./Components/Skill";
 import MoveToTop from "./Components/MoveToTop";
 import CircleLoader from "react-spinners/CircleLoader";
 import "./App.css";
@@ -47,6 +48,7 @@ function App() {
                 <Route path="/About" element={<About />} />
                 <Route path="/Project" element={<Project />} />
                 <Route path="/Contact" element={<Contact />} />
+                <Route path="/skill" element={<SkillSet />} />
               </Routes>
             </CSSTransition>
           </TransitionGroup>
