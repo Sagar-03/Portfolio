@@ -535,12 +535,12 @@ button:hover {
 .projectHeading {
   text-align: center;
   padding: 30px 0; 
-  text-decoration: underline;
+  text-decoration: indianred;
   letter-spacing: 0.4px;
   font-size: 36px;
   margin-top: 150px;
   font-weight: bold;
-  color: #e7e7e7;
+  color: #9960f5;
   text-transform: uppercase;
   background: linear-gradient(90deg, yellow 0%, #7FFFD4 100%);
   -webkit-background-clip: text;
@@ -562,7 +562,8 @@ button:hover {
 }
 
 .projectBox{
-  width: 300px;
+  width: 1000px;
+  height: 300px;
   border: 3px solid var(--color);
   border-radius: 5px;
   text-align: center;
@@ -583,10 +584,19 @@ button:hover {
 
 .projectPhoto {
   display: block;
-  width: 100%;
+  width: 35%;
   margin: 0px 0px;
-  
-}
+  float: left;
+  }
+
+  .projectbtn {
+    display: block;
+    width: 27%;  
+    bottom: 10px; 
+    float: right;
+    margin-right: 180px;
+  }
+
 
 @media (max-width: 1200px) {
   .projectHeading {
@@ -599,27 +609,51 @@ button:hover {
 @media (max-width: 768px) {
   .projectHeading {
     font-size: 22px;
-    padding: 20px 10px; /* Adjusted padding for smaller screens */
+    padding: 20px 10px; 
     margin-top: 80px;
     margin-bottom: 40px;
   }
 }
 
-@media (max-width: 480px) {
-  .projectHeading {
-    font-size: 18px;
-    padding: 20px 10px ; /* Adjusted padding for even smaller screens */
-    margin-top: 100px;
-    margin-bottom: 30px;
-    margin-left: 145px;
-  }
 
-  .projectBox {
-    margin: 0px 10px 30px 10px;
-    font-size: 16px;
-  }
-}
+  @media (max-width: 480px) {
+    .projectHeading {
+      font-size: 18px;
+      padding: 20px 10px ;
+      margin-top: 100px;
+      margin-bottom: 30px;
+      margin-left: 125px;
+    }
 
+  
+    .project {
+      margin: 25px 7%;
+    }
+  
+    .projectBox {
+      width: 90%;
+      height: auto;
+      padding: 10px;
+      font-size: 16px;
+      line-height: 20px;
+      margin: 0px 5px 20px 5px;
+    }
+  
+    .projectPhoto {
+      width: 100%;
+      margin-bottom: 10px;
+      float: none;
+    }
+  
+    .projectbtn {
+      width: 90%;
+      bottom: 5px;
+      float: none;
+      margin-left: 20px;
+      margin-top: 10px;
+        }
+  }
+  
 
 /* FOOTER */
 
