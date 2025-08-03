@@ -1,0 +1,117 @@
+/* Project item updates */
+.project-item {
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--eerie-black-2);
+  border: 1px solid var(--jet);
+  transition: var(--transition-1);
+  height: auto;
+  width: 100%; /* OK inside grid */
+}
+
+/* Modifier for a wider project tab */
+.project-item.wide {
+  /* Prevent wide from overriding grid inside project-list */
+  max-width: 100%; /* or remove this rule entirely */
+}
+
+/* Ensure project-list handles layout */
+.project-list .project-item.wide {
+  max-width: 100% !important; /* Force override if needed */
+}
+
+/* Optional: You could remove the .wide class in this context if unused */
+
+/* Hover effect */
+.project-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.project-item > div {
+  padding: 15px;
+}
+
+/* Dropdown content */
+.project-description-container {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+}
+
+.project-description-container.active {
+  opacity: 1;
+  max-height: none;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.project-description {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  line-height: 1.6;
+  padding: 0 10px;
+  transition: opacity 0.3s ease;
+}
+
+.project-links {
+  display: flex;
+  gap: 15px;
+  padding: 0 10px;
+  margin-top: 15px;
+}
+
+.project-links a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--orange-yellow-crayola);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-400);
+  transition: var(--transition-1);
+}
+
+.project-links a:hover {
+  color: var(--white-2);
+}
+
+.project-links ion-icon {
+  font-size: 18px;
+}
+
+.project-dropdown-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  background: none;
+  border: none;
+  border-top: 1px solid var(--jet);
+  color: var(--orange-yellow-crayola);
+  font-size: var(--fs-6);
+  cursor: pointer;
+  transition: var(--transition-1);
+}
+
+.project-dropdown-toggle:hover {
+  color: var(--white-2);
+}
+
+.project-dropdown-toggle ion-icon {
+  font-size: 18px;
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+
+.project-dropdown-toggle.active ion-icon {
+  transform: rotate(180deg);
+}
+
+.project-item.expanded {
+  height: auto;
+}
