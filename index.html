@@ -1,0 +1,1531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sagar Kumar Jha</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/project-updates.css">
+  <link rel="stylesheet" href="./assets/css/project-overlay.css">
+  <link rel="stylesheet" href="./assets/css/project-overlay-fix.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Anime.js CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+
+<body>
+
+  <!-- Anime.js Background Animation Container -->
+  <div id="anime-bg"></div>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Sagar Kumar Jha" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Sagar Kumar Jha">Sagar Kumar Jha</h1>
+
+          <p class="title">Software Developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:sagarjha2004@gmail.com" class="contact-link">sagarjha2004@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:9625382247" class="contact-link">9625382247</a>
+            </div>
+
+          </li>
+
+          <!-- <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div> -->
+
+          <!-- <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">June 23, 1982</time>
+            </div> 
+
+          </li> -->
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>New Delhi, India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/Sagar-03/" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/sagar-kumar-jha-237405240/" class="social-link">
+              <ion-icon name="logo-Linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://x.com/SagarKumar16289" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+          <!-- 
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li> -->
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h3 skills-title" style="font-size: 35px; color:#FFD700; position: relative;">About Me
+            <span
+              style="content: ''; position: absolute; bottom: -5px; left: 0; width: 80px; height: 3px; background: var(--vegas-gold, #FFD700);"></span>
+          </h2>
+        </header>
+
+        <section class="about-text">
+          <ul>
+            <li>Intern @SAG-DRDO (Defence Research and Development Organisation)</li>
+            <li>Open Source Contributor (Contributor in Caffine n code, GSSOC'24)</li>
+            <li>Top 10 in 15+ Hackathons</li>
+            <li>Entrepreneur (Founder @LIMEWEAR)</li>
+            <li>Google Developer Student Club (ADGIPS)</li>
+            <li>MERN Stack Developer</li>
+            <li>Artificial Intelligence - Data Science</li>
+            <li>Actively Engage in Competitive Programming</li>
+
+          </ul>
+        </section>
+
+        <!-- 
+          <p>
+            Innovative Software Developer | Entrepreneur | MERN Stack Developer | Intern @SAG-DRDO<br />
+            Eager to pioneer solutions at the intersection of technology and entrepreneurship.
+            Specializing in MERN stack development and driven by a relentless pursuit of knowledge.   
+          </p>
+        -->
+
+        <!--
+          - skills
+        -->
+        <section class="skills">
+
+          <h3 class="h3 skills-title" style="font-size: 35px; color:#FFD700; position: relative;">Skills
+            <span
+              style="content: ''; position: absolute; bottom: -5px; left: 0; width: 80px; height: 3px; background: var(--vegas-gold, #FFD700);"></span>
+          </h3>
+
+          <div class="skills-list">
+
+            <!-- <div class="skills-item" data-skill="Spring">
+              <div class="skills-icon-box">
+                <img src="./assets/images/skills/spring.png" alt="Spring" width="40">
+              </div>
+              <span class="skills-tooltip">Spring</span>
+            </div> -->
+
+            <div class="skills-item" data-skill="React">
+              <div class="skills-icon-box">
+                <img src="./assets/images/skills/react.png" alt="React" width="40">
+              </div>
+              <span class="skills-tooltip">React</span>
+            </div>
+
+            <div class="skills-item" data-skill="JavaScript">
+              <div class="skills-icon-box">
+                <img src="./assets/images/skills/javascript.png" alt="JavaScript" width="40">
+              </div>
+              <span class="skills-tooltip">JavaScript</span>
+            </div>
+
+            <div class="skills-item" data-skill="HTML5">
+              <div class="skills-icon-box">
+                <img src="./assets/images/skills/html.png" alt="HTML5" width="40">
+              </div>
+              <span class="skills-tooltip">HTML5</span>
+            </div>
+
+            <div class="skills-item" data-skill="CSS3">
+              <div class="skills-icon-box">
+                <img src="./assets/images/skills/css3.png" alt="CSS3" width="40">
+              </div>
+              <span class="skills-tooltip">CSS3</span>
+            </div>
+
+            <div class="skills-item" data-skill="Java">
+              <div class="skills-icon-box">
+                <img src="./assets/images/skills/java.png" alt="Java" width="40">
+              </div>
+              <span class="skills-tooltip">Java</span>
+            </div>
+
+            <div class="skills-item" data-skill="Node.js">
+              <div class="skills-icon-box">
+                <img src="./assets/images/skills/nodejs.png" alt="Node.js" width="40">
+              </div>
+              <span class="skills-tooltip">Node.js</span>
+            </div>
+
+            <div class="skills-item" data-skill="MongoDB">
+              <div class="skills-icon-box">
+                <img src="./assets/images/skills/mongodb.png" alt="MongoDB" width="40">
+              </div>
+              <span class="skills-tooltip">MongoDB</span>
+            </div>
+            <div class="skills-item" data-skill="MySQL">
+              <div class="skills-icon-box">
+                <img src="./assets/images/skills/mysql.png" alt="MySQL" width="40">
+              </div>
+              <span class="skills-tooltip">MySQL</span>
+            </div>
+
+            <div class="skills-item" data-skill="Git">
+              <div class="skills-icon-box">
+                <img src="./assets/images/skills/git.png" alt="Git" width="40">
+              </div>
+              <span class="skills-tooltip">Git</span>
+            </div>
+
+            <div class="skills-item" data-skill="Github">
+              <div class="skills-icon-box">
+                <img src="./assets/images/skills/github.png" alt="Github" width="40">
+              </div>
+              <span class="skills-tooltip">Github</span>
+            </div>
+          </div>
+        </section>
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title" style="font-size: 35px; color:#FFD700; position: relative;">What I'm Doing
+            <span
+              style="content: ''; position: absolute; bottom: -5px; left: 0; width: 80px; height: 3px; background: var(--vegas-gold, #FFD700);"></span>
+          </h3>
+
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Full Stack Development icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Full-Stack Development</h4>
+                <p class="service-item-text">
+                  Building scalable and responsive web applications using modern technologies like React, Node.js, and
+                  MySQL.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="Backend Development icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Backend Engineering</h4>
+                <p class="service-item-text">
+                  Crafting secure APIs and handling databases with expertise in Express.js, PHP, and RESTful
+                  architecture.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Client Services icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Client-Based Development</h4>
+                <p class="service-item-text">
+                  Providing tailored solutions for businesses and individuals, including dashboards, portfolios, CMS
+                  platforms, and web automation tools.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Industry Development icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Industry-Based Development</h4>
+                <p class="service-item-text">
+                  Hands-on experience building real-time systems during internships, focusing on scalable web solutions
+                  and secure applications.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+        <!-- 
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section> -->
+
+
+        <!--
+          - testimonials modal
+        -->
+        <!-- 
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div> -->
+
+
+        <!--
+          - clients
+        -->
+
+        <!-- <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul> -->
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <!--Experience-->
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title" style="font-size: 17px;">Software Development Intern & Project Lead
+              </h4>
+              <span style="display: flex; justify-content: space-between;"><span style="font-size: 16px;"><b>Ministry Of
+                    Education (DSEU)</b></span><span>January' 2024 — March' 2025</span></span>
+
+
+              <p class="timeline-text">
+              <ul style="list-style-type: disc; padding-left: 20px;">
+                <li style="color: white; position: relative;">
+                  <span
+                    style="display: inline-block; width: 8px; height: 8px; background-color: #FFD700; border-radius: 50%; position: absolute; left: -20px; top: 8px;"></span>
+                  Engineered a biometric attendance system enabling real-time facial recognition and centralized access
+                  control across 24 campuses.
+                </li>
+                <li style="color: white; position: relative;">
+                  <span
+                    style="display: inline-block; width: 8px; height: 8px; background-color: #FFD700; border-radius: 50%; position: absolute; left: -20px; top: 8px;"></span>
+                  Developed and managed the official university website using improving load performance, scalability,
+                  and mobile responsiveness.
+                </li>
+                <li style="color: white; position: relative;">
+                  <span
+                    style="display: inline-block; width: 8px; height: 8px; background-color: #FFD700; border-radius: 50%; position: absolute; left: -20px; top: 8px;"></span>
+                  Architected backend modules for file tracking, leave, and inventory management with secure JWT-based
+                  authentication.
+                </li>
+                <li style="color: white; position: relative;">
+                  <span
+                    style="display: inline-block; width: 8px; height: 8px; background-color: #FFD700; border-radius: 50%; position: absolute; left: -20px; top: 8px;"></span>
+                  Utilized technologies and tools including React.js, Node.js, Express.js, MongoDB, Tailwind CSS,
+                  Figma, Git, GitHub, REST APIs and deployment tools like Vercel and Render, with a strong focus on
+                  building responsive UI and full-stack web applications.
+                </li>
+              </ul>
+              </p>
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title" style="font-size: 17px;">Frontend Developer</h4>
+              <span style="display: flex; justify-content: space-between;"><span
+                  style="font-size: 16px;"><b>Sidhsidheshwar security services</b></span><span>December' 2024 —
+                  Feburary' 2025</span></span>
+
+
+              <p class="timeline-text">
+              <ul style="list-style-type: disc; padding-left: 20px;">
+                <li style="color: white; position: relative;">
+                  <span
+                    style="display: inline-block; width: 8px; height: 8px; background-color: #FFD700; border-radius: 50%; position: absolute; left: -20px; top: 8px;"></span>
+                  Collaborated with the product and AI teams to design and implement responsive frontend interfaces for
+                  real-time AI-powered services..
+                </li>
+                <li style="color: white; position: relative;">
+                  <span
+                    style="display: inline-block; width: 8px; height: 8px; background-color: #FFD700; border-radius: 50%; position: absolute; left: -20px; top: 8px;"></span>
+                  Integrated RESTful APIs and AI model outputs into a seamless UI/UX flow, enhancing usability and
+                  reducing latency in user interactions.
+                </li>
+                <li style="color: white; position: relative;">
+                  <span
+                    style="display: inline-block; width: 8px; height: 8px; background-color: #FFD700; border-radius: 50%; position: absolute; left: -20px; top: 8px;"></span>
+                  Developed reusable components and implemented state management to ensure scalability and
+                  maintainability across the application.
+                </li>
+                <li style="color: white; position: relative;">
+                  <span
+                    style="display: inline-block; width: 8px; height: 8px; background-color: #FFD700; border-radius: 50%; position: absolute; left: -20px; top: 8px;"></span>
+                  Utilized technologies including React.js, Node.js, Express.js, MongoDB, Chart.js, Tailwind CSS, Figma,
+                  Git, GitHub with a strong emphasis on performance, modularity, and real-time data
+                  visualization.
+                </li>
+              </ul>
+              </p>
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title" style="font-size: 17px;">Research Intern</h4>
+              <span style="display: flex; justify-content: space-between;"><span style="font-size: 16px;"><b>SAG-DRDO
+                    (Ministry of Defence)</b></span><span>June'2024 — September'2024</span></span>
+
+
+              <p class="timeline-text">
+              <ul style="list-style-type: disc; padding-left: 20px;">
+                <li style="color: white; position: relative;">
+                  <span
+                    style="display: inline-block; width: 8px; height: 8px; background-color: #FFD700; border-radius: 50%; position: absolute; left: -20px; top: 8px;"></span>
+                  Implemented API security protocols to protect internal web services, focusing on endpoint hardening
+                  and secure communication.
+                </li>
+                <li style="color: white; position: relative;">
+                  <span
+                    style="display: inline-block; width: 8px; height: 8px; background-color: #FFD700; border-radius: 50%; position: absolute; left: -20px; top: 8px;"></span>
+                  Implemented intelligent string matching to analyse API request patterns and detect disguised threats.
+                </li>
+                <li style="color: white; position: relative;">
+                  <span
+                    style="display: inline-block; width: 8px; height: 8px; background-color: #FFD700; border-radius: 50%; position: absolute; left: -20px; top: 8px;"></span>
+                  Documented API risk surfaces and contributed to secure integration strategies across backend systems.
+                </li>
+                <li style="color: white; position: relative;">
+                  <span
+                    style="display: inline-block; width: 8px; height: 8px; background-color: #FFD700; border-radius: 50%; position: absolute; left: -20px; top: 8px;"></span>
+                  Utilized tools including Fuzzy Wuzzy, Rapid Fuzz, and black-box testing techniques with a focus on
+                  secure mobile and web application testing and threat detection.
+                </li>
+              </ul>
+              </p>
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title" style="font-size: 17px;">Full Stack Developer</h4>
+              <span style="display: flex; justify-content: space-between;"><span style="font-size: 16px;"><b>DP
+                    Enterprises</b></span><span>July'2023 — December'2023</span></span>
+
+
+              <p class="timeline-text">
+              <ul style="list-style-type: disc; padding-left: 20px;">
+                <li style="color: white; position: relative;">
+                  <span
+                    style="display: inline-block; width: 8px; height: 8px; background-color: #FFD700; border-radius: 50%; position: absolute; left: -20px; top: 8px;"></span>
+                  Led the development of a dashboard for real-time analytics, invoice tracking, and secure access
+                  management.
+                </li>
+                <li style="color: white; position: relative;">
+                  <span
+                    style="display: inline-block; width: 8px; height: 8px; background-color: #FFD700; border-radius: 50%; position: absolute; left: -20px; top: 8px;"></span>
+                  Built scalable backend services for invoice generation, user authentication, and activity logs using
+                  Express.js and MongoDB.
+                </li>
+                <li style="color: white; position: relative;">
+                  <span
+                    style="display: inline-block; width: 8px; height: 8px; background-color: #FFD700; border-radius: 50%; position: absolute; left: -20px; top: 8px;"></span>
+                  Crafted responsive UI components in React.js, integrating interactive charts and dynamic role-based
+                  access control.
+                </li>
+                <li style="color: white; position: relative;">
+                  <span
+                    style="display: inline-block; width: 8px; height: 8px; background-color: #FFD700; border-radius: 50%; position: absolute; left: -20px; top: 8px;"></span>
+                  Utilized technologies including React.js, Node.js, Express.js, MongoDB, Chart.js, Tailwind CSS, Figma,
+                  Git, GitHub, and JWT with a strong emphasis on performance, modularity, and real-time data
+                  visualization.
+                </li>
+              </ul>
+              </p>
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title" style="font-size: 17px;">Management Lead
+              </h4>
+              <span><span style="font-size: 16px;"><b>Google
+                    Developes Group (GDG)</b></span>
+
+
+                <p class="timeline-text">
+                <ul style="list-style-type: disc; padding-left: 20px;">
+                  <li style="color: white; position: relative;">
+                    <span
+                      style="display: inline-block; width: 8px; height: 8px; background-color: #FFD700; border-radius: 50%; position: absolute; left: -20px; top: 8px;"></span>
+                    Organized multiple large-scale hackathons and technical events, each engaging 300+ participants,
+                    overseeing end-to-end execution from planning to final deployment.
+                  </li>
+                  <li style="color: white; position: relative;">
+                    <span
+                      style="display: inline-block; width: 8px; height: 8px; background-color: #FFD700; border-radius: 50%; position: absolute; left: -20px; top: 8px;"></span>
+                    Acted as the backbone of the community by managing all technical and operational aspects, ensuring
+                    smooth collaboration across dev, design, and logistics teams.
+                  </li>
+                  <li style="color: white; position: relative;">
+                    <span
+                      style="display: inline-block; width: 8px; height: 8px; background-color: #FFD700; border-radius: 50%; position: absolute; left: -20px; top: 8px;"></span>
+                    Mentored 500+ students throughout the year, consistently guiding over 100+ active mentees in project
+                    development, career growth, and tech upskilling.
+                  </li>
+                  <li style="color: white; position: relative;">
+                    <span
+                      style="display: inline-block; width: 8px; height: 8px; background-color: #FFD700; border-radius: 50%; position: absolute; left: -20px; top: 8px;"></span>
+                    Demonstrated leadership by hosting and leading community initiatives, driving innovation,
+                    engagement, and a growth-focused ecosystem.
+                  </li>
+                </ul>
+                </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title" style="font-size: 17px;">Founder (CASQUE)
+              </h4>
+              <span><b>STARTUP</b></span>
+
+
+              <p class="timeline-text">
+              <ul style="list-style-type: disc; padding-left: 20px;">
+                <li style="color: white; position: relative;">
+                  <span
+                    style="display: inline-block; width: 8px; height: 8px; background-color: #FFD700; border-radius: 50%; position: absolute; left: -20px; top: 8px;"></span>
+                  Founded Casque, a smart helmet startup aimed at revolutionizing personal safety through sensor-based
+                  technology and IoT integration.
+                </li>
+                <li style="color: white; position: relative;">
+                  <span
+                    style="display: inline-block; width: 8px; height: 8px; background-color: #FFD700; border-radius: 50%; position: absolute; left: -20px; top: 8px;"></span>
+                  Successfully pitched the idea to the Institution’s Innovation Council (IIC), standing out among 300+
+                  startup submissions for innovation and feasibility.
+
+                </li>
+                <li style="color: white; position: relative;">
+                  <span
+                    style="display: inline-block; width: 8px; height: 8px; background-color: #FFD700; border-radius: 50%; position: absolute; left: -20px; top: 8px;"></span>
+                  Led a cross-functional team through ideation, prototype design, and technical documentation,
+                  overseeing all stages of product development.
+
+                </li>
+                <li style="color: white; position: relative;">
+                  <span
+                    style="display: inline-block; width: 8px; height: 8px; background-color: #FFD700; border-radius: 50%; position: absolute; left: -20px; top: 8px;"></span>
+                  Demonstrated strategic leadership, innovation-driven thinking, and end-to-end ownership—from market
+                  research to presentation delivery.
+
+                </li>
+              </ul>
+              </p>
+            </li>
+
+          </ol>
+
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Guru Gobind Singh Indraprastha University</h4>
+
+
+              <p class="timeline-text" style="font-size: 17px; color: #FFD700;">
+                <b>
+                  Bachelor of Technology in Computer Science and Engineering (CSE) </b>
+                <br />
+              </p>
+              <span style="display: flex; justify-content: space-between;"><span
+                  style="font-size: 16px;  color:white"><b>2022-2026</b></span><span
+                  style="color: white;"><b>9.4/10</b></span></span>
+              <p class="timeline-text" style="font-size: 17px; color: white;">
+                <b>Relevant Coursework:</b> Data Structures and Algorithms, Database Management Systems, Operating
+                Systems, Computer Networks, Web Development, Software Engineering, Artificial Intelligence, Machine
+                Learning.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Govt Co-ed Senior Secondary School</h4>
+
+              <span style="font-size: 18px;"><b>2020 — 2022</b></span>
+              <!-- <p class="timeline-text" style="font-size: 17px; color: white;">
+                <b>Relevant Coursework:</b> Data Structures and Algorithms, Database Management Systems, Operating
+                Systems, Computer Networks, Web Development, Software Engineering, Artificial Intelligence, Machine
+                Learning.
+              </p> -->
+
+
+            </li>
+
+
+
+          </ol>
+
+        </section>
+
+
+        <!-- <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web design</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Graphic design</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Branding</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">WordPress</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section> -->
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="projects">
+
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <section class="projects">
+
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+
+                <img src="./assets/images/project-1.png" alt="Student Helper" loading="lazy">
+
+                <div class="project-overlay">
+                  <h3 class="project-overlay-title">Student-Helper</h3>
+                  <a href="https://student-helper-yaye.vercel.app/" target="_blank" class="project-overlay-button"
+                    onclick="window.open('https://student-helper-yaye.vercel.app/', '_blank'); return false;">View
+                    Project</a>
+                </div>
+              </figure>
+              <div>
+                <h3 class="project-title">Student-Helper</h3>
+                <p class="project-category">Full Stack Web development</p>
+                <button class="project-dropdown-toggle">
+                  Details
+                  <ion-icon name="chevron-down-outline"></ion-icon>
+                </button>
+                <div class="project-description-container">
+                  <p class="project-description">Student Helper is an end-to-end student support platform designed to
+                    simplify campus life. It offers centralized academic resources, a peer-to-peer marketplace, content
+                    assistance services, and real-time student-to-senior connections. The platform also features modules
+                    like night market trading and collaborative study tools, tailored to students' daily needs.</p>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/Sagar-03" target="_blank">
+                    <ion-icon name="logo-github"></ion-icon>
+                    <span>GitHub</span>
+                  </a>
+                  <a href="https://student-helper-yaye.vercel.app/" target="_blank">
+                    <ion-icon name="link-outline"></ion-icon>
+                    <span>Live Demo</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <!--Project 2-->
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+
+                <img src="./assets/images/project-2.png" alt="Student Helper" loading="lazy">
+
+                <div class="project-overlay">
+                  <h3 class="project-overlay-title">Meetmates</h3>
+                  <a href="https://www.meetmates.space/" target="_blank" class="project-overlay-button"
+                    onclick="window.open('https://www.meetmates.space/', '_blank'); return false;">View Project</a>
+                </div>
+              </figure>
+              <div>
+                <h3 class="project-title">Meetmates</h3>
+                <p class="project-category">Full Stack Web development</p>
+                <button class="project-dropdown-toggle">
+                  Details
+                  <ion-icon name="chevron-down-outline"></ion-icon>
+                </button>
+                <div class="project-description-container">
+                  <p class="project-description">Meetmates is a social platform designed to connect students for
+                    collaborative learning and networking. It offers features like study groups, event planning, and
+                    resource sharing, all aimed at enhancing the student experience. With a user-friendly interface and
+                    robust functionality, Meetmates fosters a sense of community and support among students.</p>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/Sagar-03" target="_blank">
+                    <ion-icon name="logo-github"></ion-icon>
+                    <span>GitHub</span>
+                  </a>
+                  <a href="https://www.meetmates.space/" target="_blank">
+                    <ion-icon name="link-outline"></ion-icon>
+                    <span>Live Demo</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+
+                <img src="./assets/images/project-3.jpg" alt="Gemini-clone" loading="lazy">
+
+                <div class="project-overlay">
+                  <h3 class="project-overlay-title">Gemini (Clone)</h3>
+                  <a href="https://a-ichatgpt.vercel.app/" target="_blank" class="project-overlay-button"
+                    onclick="window.open('https:/ /a-ichatgpt.vercel.app/', '_blank'); return false;">View Project</a>
+                </div>
+              </figure>
+              <div>
+                <h3 class="project-title">Gemini (Clone)</h3>
+                <p class="project-category">Full Stack Web development</p>
+                <button class="project-dropdown-toggle">
+                  Details
+                  <ion-icon name="chevron-down-outline"></ion-icon>
+                </button>
+                <div class="project-description-container">
+                  <p class="project-description">AI Chat Clone is an advanced conversational assistant built to
+                    replicate the capabilities of ChatGPT and Gemini. It supports natural language understanding,
+                    real-time responses, and context-aware interactions. Designed with a sleek UI and powered by large
+                    language models, it enables multi-turn conversations, file handling, and productivity features
+                    similar to industry-leading AI tools.</p>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/Sagar-03" target="_blank">
+                    <ion-icon name="logo-github"></ion-icon>
+                    <span>GitHub</span>
+                  </a>
+                  <a href="https://a-ichatgpt.vercel.app/" target="_blank">
+                    <ion-icon name="link-outline"></ion-icon>
+                    <span>Live Demo</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+
+                <img src="./assets/images/project-4.png" alt="Student Helper" loading="lazy">
+
+                <div class="project-overlay">
+                  <h3 class="project-overlay-title">Virtual Assistant</h3>
+                  <a href="https://chat-bot-assistant-beige.vercel.app/" target="_blank" class="project-overlay-button"
+                    onclick="window.open('https://chat-bot-assistant-beige.vercel.app/', '_blank'); return false;">View
+                    Project</a>
+                </div>
+              </figure>
+              <div>
+                <h3 class="project-title">Virtual Assistant</h3>
+                <p class="project-category">Full Stack Web development</p>
+                <button class="project-dropdown-toggle">
+                  Details
+                  <ion-icon name="chevron-down-outline"></ion-icon>
+                </button>
+                <div class="project-description-container">
+                  <p class="project-description">Virtual Assistant is an intelligent AI-powered tool designed to
+                    streamline daily tasks and enhance productivity. It offers natural language conversations, real-time
+                    assistance, context-aware responses, and supports features like file handling and reminders. With a
+                    modern interface and advanced language models, it delivers seamless multi-turn interactions and
+                    practical utilities for users.</p>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/Sagar-03" target="_blank">
+                    <ion-icon name="logo-github"></ion-icon>
+                    <span>GitHub</span>
+                  </a>
+                  <a href="https://chat-bot-assistant-beige.vercel.app/" target="_blank">
+                    <ion-icon name="link-outline"></ion-icon>
+                    <span>Live Demo</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+
+                <img src="./assets/images/project-5.png" alt="Student Helper" loading="lazy">
+
+                <div class="project-overlay">
+                  <h3 class="project-overlay-title">E-commerce Website</h3>
+                  <a href="https://mern-store-gold.vercel.app/" target="_blank" class="project-overlay-button"
+                    onclick="window.open('https://mern-store-gold.vercel.app/', '_blank'); return false;">View
+                    Project</a>
+                </div>
+              </figure>
+              <div>
+                <h3 class="project-title">E-commerce Website</h3>
+                <p class="project-category">Full Stack Web development</p>
+                <button class="project-dropdown-toggle">
+                  Details
+                  <ion-icon name="chevron-down-outline"></ion-icon>
+                </button>
+                <div class="project-description-container">
+                  <p class="project-description">E-commerce Website is a full-stack web application designed to provide
+                    a seamless online shopping experience. It features user authentication, product listings, shopping
+                    cart functionality, and secure payment processing. Built with modern technologies, it offers a
+                    responsive design and an intuitive interface for both customers and administrators.</p>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/Sagar-03" target="_blank">
+                    <ion-icon name="logo-github"></ion-icon>
+                    <span>GitHub</span>
+                  </a>
+                  <a href="https://mern-store-gold.vercel.app/" target="_blank">
+                    <ion-icon name="link-outline"></ion-icon>
+                    <span>Live Demo</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+
+                  <p class="blog-text">
+                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+                  <p class="blog-text">
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                  <p class="blog-text">
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+                  <p class="blog-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+
+                  <p class="blog-text">
+                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                  <p class="blog-text">
+                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <!-- <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section> -->
+
+        <section class="contact-form">
+
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form id="contact-form" action="https://formspree.io/f/mldllwvp" method="POST" class="form" data-form>
+            <input type="hidden" name="_redirect" value="none">
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <button class="form-btn" type="submit" data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          </form>
+          <div id="form-success-message" style="display:none;color:#4BB543;margin-top:1em;text-align:center;">Thank you! Your message has been sent.</div>
+          <div id="form-error-message" style="display:none;color:#D8000C;margin-top:1em;text-align:center;">Oops! Something went wrong. Please try again later.</div>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+
+
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/project-dropdown.js"></script>
+  <script src="./assets/js/project-overlay.js"></script>
+  <script src="./assets/js/project-links-fix.js"></script>
+
+  <!-- Contact Form AJAX Submission -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var form = document.getElementById('contact-form');
+      var successMsg = document.getElementById('form-success-message');
+      var errorMsg = document.getElementById('form-error-message');
+      if(form) {
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          successMsg.style.display = 'none';
+          errorMsg.style.display = 'none';
+          var formData = new FormData(form);
+          fetch(form.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+              'Accept': 'application/json'
+            }
+          }).then(function(response) {
+            if (response.ok) {
+              form.reset();
+              successMsg.style.display = 'block';
+            } else {
+              response.json().then(function(data) {
+                errorMsg.textContent = data.error || 'Oops! Something went wrong. Please try again later.';
+                errorMsg.style.display = 'block';
+              }).catch(function() {
+                errorMsg.style.display = 'block';
+              });
+            }
+          }).catch(function() {
+            errorMsg.style.display = 'block';
+          });
+        });
+      }
+    });
+  </script>
+
+  <!-- Anime.js Background Animation -->
+  <script src="./assets/js/anime-bg.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
