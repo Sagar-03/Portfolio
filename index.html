@@ -626,6 +626,116 @@
 
             <li class="timeline-item">
 
+              <h4 class="h4 timeline-item-title" style="font-size: 17px;">
+                Software Development Engineer (SDE)
+              </h4>
+
+              <span style="display: flex; justify-content: space-between;">
+                <span style="font-size: 16px;"><b>Datagen (Authkey)</b></span>
+                <span>Oct' 2025 — Present</span>
+              </span>
+
+              <p class="timeline-text">
+              <ul style="list-style-type: disc; padding-left: 20px;">
+
+                <li style="color: white; position: relative;">
+                  <span
+                    style="display: inline-block; width: 8px; height: 8px; background-color: #FFD700; border-radius: 50%; position: absolute; left: -20px; top: 8px;">
+                  </span>
+                  Designing, developing, and maintaining scalable backend systems and services powering Datagen’s
+                  production infrastructure.
+                </li>
+
+                <li style="color: white; position: relative;">
+                  <span
+                    style="display: inline-block; width: 8px; height: 8px; background-color: #FFD700; border-radius: 50%; position: absolute; left: -20px; top: 8px;">
+                  </span>
+                  Owning end-to-end implementation of core features, from system design and API development to
+                  deployment and post-release monitoring.
+                </li>
+
+                <li style="color: white; position: relative;">
+                  <span
+                    style="display: inline-block; width: 8px; height: 8px; background-color: #FFD700; border-radius: 50%; position: absolute; left: -20px; top: 8px;">
+                  </span>
+                  Optimizing application performance, improving system reliability, and refactoring legacy components to
+                  enhance scalability and maintainability.
+                </li>
+
+                <li style="color: white; position: relative;">
+                  <span
+                    style="display: inline-block; width: 8px; height: 8px; background-color: #FFD700; border-radius: 50%; position: absolute; left: -20px; top: 8px;">
+                  </span>
+                  Collaborating with product, design, and QA teams to translate business requirements into robust
+                  technical solutions within Agile workflows.
+                </li>
+
+                <li style="color: white; position: relative;">
+                  <span
+                    style="display: inline-block; width: 8px; height: 8px; background-color: #FFD700; border-radius: 50%; position: absolute; left: -20px; top: 8px;">
+                  </span>
+                  Ensuring high code quality through peer reviews, version control best practices, and proactive
+                  debugging across distributed systems.
+                </li>
+
+              </ul>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title" style="font-size: 17px;">
+                Software Development Intern
+              </h4>
+
+              <span style="display: flex; justify-content: space-between;">
+                <span style="font-size: 16px;"><b>Datagen</b></span>
+                <span>July' 2025 — Oct' 2025</span>
+              </span>
+
+              <p class="timeline-text">
+              <ul style="list-style-type: disc; padding-left: 20px;">
+
+                <li style="color: white; position: relative;">
+                  <span
+                    style="display: inline-block; width: 8px; height: 8px; background-color: #FFD700; border-radius: 50%; position: absolute; left: -20px; top: 8px;">
+                  </span>
+                  Contributed to the design and development of scalable, high-performance systems supporting Datagen’s
+                  core infrastructure.
+                </li>
+
+                <li style="color: white; position: relative;">
+                  <span
+                    style="display: inline-block; width: 8px; height: 8px; background-color: #FFD700; border-radius: 50%; position: absolute; left: -20px; top: 8px;">
+                  </span>
+                  Integrated new product features and enhanced existing modules, focusing on performance optimization,
+                  code quality, and long-term maintainability.
+                </li>
+
+                <li style="color: white; position: relative;">
+                  <span
+                    style="display: inline-block; width: 8px; height: 8px; background-color: #FFD700; border-radius: 50%; position: absolute; left: -20px; top: 8px;">
+                  </span>
+                  Collaborated closely with cross-functional teams including product, QA, and design to ensure smooth
+                  feature rollouts and robust system architecture.
+                </li>
+
+                <li style="color: white; position: relative;">
+                  <span
+                    style="display: inline-block; width: 8px; height: 8px; background-color: #FFD700; border-radius: 50%; position: absolute; left: -20px; top: 8px;">
+                  </span>
+                  Actively participated in debugging, API integration, version control, and Agile development workflows
+                  using Git and GitHub.
+                </li>
+
+              </ul>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
               <h4 class="h4 timeline-item-title" style="font-size: 17px;">Software Development Intern & Project Lead
               </h4>
               <span style="display: flex; justify-content: space-between;"><span style="font-size: 16px;"><b>Ministry Of
@@ -1453,8 +1563,10 @@
               <span>Send Message</span>
             </button>
           </form>
-          <div id="form-success-message" style="display:none;color:#4BB543;margin-top:1em;text-align:center;">Thank you! Your message has been sent.</div>
-          <div id="form-error-message" style="display:none;color:#D8000C;margin-top:1em;text-align:center;">Oops! Something went wrong. Please try again later.</div>
+          <div id="form-success-message" style="display:none;color:#4BB543;margin-top:1em;text-align:center;">Thank you!
+            Your message has been sent.</div>
+          <div id="form-error-message" style="display:none;color:#D8000C;margin-top:1em;text-align:center;">Oops!
+            Something went wrong. Please try again later.</div>
 
         </section>
 
@@ -1481,12 +1593,12 @@
 
   <!-- Contact Form AJAX Submission -->
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
       var form = document.getElementById('contact-form');
       var successMsg = document.getElementById('form-success-message');
       var errorMsg = document.getElementById('form-error-message');
-      if(form) {
-        form.addEventListener('submit', function(e) {
+      if (form) {
+        form.addEventListener('submit', function (e) {
           e.preventDefault();
           successMsg.style.display = 'none';
           errorMsg.style.display = 'none';
@@ -1497,19 +1609,19 @@
             headers: {
               'Accept': 'application/json'
             }
-          }).then(function(response) {
+          }).then(function (response) {
             if (response.ok) {
               form.reset();
               successMsg.style.display = 'block';
             } else {
-              response.json().then(function(data) {
+              response.json().then(function (data) {
                 errorMsg.textContent = data.error || 'Oops! Something went wrong. Please try again later.';
                 errorMsg.style.display = 'block';
-              }).catch(function() {
+              }).catch(function () {
                 errorMsg.style.display = 'block';
               });
             }
-          }).catch(function() {
+          }).catch(function () {
             errorMsg.style.display = 'block';
           });
         });
